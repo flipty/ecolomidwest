@@ -1,0 +1,16 @@
+/* line 1, ../../../../../Users/tesch/Development/ecolomidwest/wp-content/themes/ecolo/scss/partials/_global.scss */
+body {
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 8, ../../../../../Users/tesch/Development/ecolomidwest/wp-content/themes/ecolo/scss/partials/_global.scss */
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=ecolo.css.map */

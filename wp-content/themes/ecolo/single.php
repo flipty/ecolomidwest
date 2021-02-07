@@ -2,41 +2,42 @@
 
 	<?php	if(have_posts()): while(have_posts()): the_post();?>
 
-	<div class="container content-container">
-		<div class="content-inner">
-			<div class="row">
-				<div class="col-md-9 post-content">
+	<div class="container">
+
 					<div <?php post_class();?>>
 						<h1><?php the_title();?></h1>
 						<?php the_content();?>
 					</div>
-				</div>
-				<div class="col-md-3 post-listing">
-					<h4>More from the kitchen</h4>
+
+					<h4>Post listing</h4>
 					<?php
 					$args = array(
 							'posts_per_page' => -1
 					);
 					$latest_posts = new WP_Query( $args );
 					if ( $latest_posts->have_posts() ) {
+						?>
+						<ul>
+						<?php
 							while ( $latest_posts->have_posts() ) {
 									$latest_posts->the_post();
 									// Post data goes here.
 									?>
-							<div class="post">
+
+							<li class="post">
 								<div class="content">
 									<h3><a href="<?php echo get_the_permalink();?>"><?php echo get_the_title();?></a></h3>
 								</div>
-							</div>
+							</li>
 									<?php
 							}
-					}
+							?>
+						</ul>
+						<?php }
 					wp_reset_postdata();
 					?>
 
-				</div>
-			</div>
-		</div>
+
 	</div>
 
 	<?php	endwhile; endif;?>

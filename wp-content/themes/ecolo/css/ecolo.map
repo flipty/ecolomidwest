@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "ecolo.css",
+	"sources": [
+		"../scss/ecolo.scss",
+		"../scss/partials/_variables.scss",
+		"../scss/partials/_global.scss"
+	],
+	"sourcesContent": [
+		"@import 'partials/variables';\n@import 'partials/global';\n",
+		"// 768px\n// 992px\n// 1200px\n@mixin bp($point) {\n  @if $point == mobile {\n    @media only screen and (max-width: 992px) {\n      @content;\n    }\n  }\n  @if $point == desktop {\n    @media only screen and (min-width: 1024px) {\n      @content;\n    }\n  }\n  @if $point == md {\n    @media only screen and (min-width: 769px) and (max-width: 992px) {\n      @content;\n    }\n  }\n  @if $point == lg {\n    @media only screen and (min-width: 993px) and (max-width: 1199px) {\n      @content;\n    }\n  }\n  @if $point == xl {\n    @media only screen and (min-width: 1200px) {\n      @content;\n    }\n  }\n}\n\n$tomato: #bb290c;\n$clay: #d46900;\n$mud: #b1783f;\n$ember: #dc8533;\n$salmon: #f58c73;\n$lime: #8bcb00;\n$cilantro: #33a522;\n$pepper: #1a4a13;\n$avocado: #d0d400;\n$adobe: #f4f5c4;\n$black90: rgba(0,0,0,0.9);\n$black75: rgba(0,0,0,0.75);\n$black50: rgba(0,0,0,0.5);\n$black25: rgba(0,0,0,0.25);\n$black15: rgba(0,0,0,0.15);\n$black10: rgba(0,0,0,0.1);\n$sm: 600px;\n$md: 750px;\n$lg: 1000px;\n$xl: 1140px;\n\n$white: #ffffff;\n$black: #000000;\n",
+		"body {\n  background: $white;\n  padding: 0;\n  margin: 0;\n  font-family: sans-serif;\n}\n\n.mobile-only {\n  @include bp(desktop){\n    display: none !important;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": ";AEAA,AAAA,IAAI,CAAC;EACH,UAAU,EDmDJ,OAAO;EClDb,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,UAAU;CACxB;;ADKG,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,MAAM;;ECH7C,AAAA,YAAY,CAAC;IAET,OAAO,EAAE,eAAe;GAE3B"
+}
