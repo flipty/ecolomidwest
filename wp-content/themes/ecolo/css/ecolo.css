@@ -308,6 +308,21 @@ header ul.header-nav li.menu-item-has-children:hover ul.sub-menu, header ul.foot
   }
 }
 
+@media only screen and (max-width: 992px) {
+  /* line 242, ../../../../../Users/tesch/Development/ecolomidwest/wp-content/themes/ecolo/scss/partials/_global.scss */
+  footer .container {
+    display: block;
+  }
+  /* line 244, ../../../../../Users/tesch/Development/ecolomidwest/wp-content/themes/ecolo/scss/partials/_global.scss */
+  footer .container ul.footer-nav {
+    display: block;
+    position: static;
+    background: #2f3c34;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+
 /* line 2, ../../../../../Users/tesch/Development/ecolomidwest/wp-content/themes/ecolo/scss/partials/_post-page.scss */
 .page-template-default h1, .single-post h1 {
   color: #b9f925;

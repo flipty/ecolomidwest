@@ -236,3 +236,18 @@ header, footer {
     }
   }
 }
+
+@include bp(mobile){
+  footer {
+    .container {
+      display: block;
+      ul.footer-nav {
+        display: block;
+        position: static;
+        background: $color-darkforest;
+        margin-bottom: 20px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
