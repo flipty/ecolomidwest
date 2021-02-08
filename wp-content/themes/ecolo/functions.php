@@ -174,11 +174,29 @@ function wpdocs_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 function custom_admin_css() {
+echo	'<link rel="preconnect" href="https://fonts.gstatic.com">';
+echo '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">';
 echo '<style type="text/css">';
 
 /* Main column width */
 echo '.wp-block {';
 echo '    max-width: 1000px;';
+echo '    font-family: "Montserrat";';
+echo '    background-color: #c6dc93;';
+echo '}';
+
+echo '.block-editor__typewriter {';
+echo ' background-color: #c6dc93;';
+echo '}';
+
+echo '.editor-post-title .editor-post-title__input {';
+echo '	color: #b9f925;';
+echo '	background: #1a512e;';
+echo '	padding: 0.35em 0.75em;';
+echo '	font-weight: 300;';
+echo '	border-top-left-radius: 20px;';
+echo '	border-bottom-right-radius: 20px;';
+echo '	font-size: 2em;';
 echo '}';
 
 /* Width of "wide" blocks */

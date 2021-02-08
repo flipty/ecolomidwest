@@ -1,0 +1,100 @@
+.page-template-template-home {
+  .hero {
+    background: $color-forest;
+    border-top-left-radius: 40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    .content {
+      width: 100%;
+      .inner {
+        padding: 30px;
+        padding-bottom: 0;
+        h1 {
+          font-size: 105px;
+          line-height: 0.8em;
+          color: $white;
+          margin-bottom: 0;
+          margin-top: 25px;
+        }
+        p {
+          color: $white;
+          font-size: 30px;
+          margin-bottom: 0;
+          a {
+            color: $white;
+            text-decoration: none;
+            strong {
+              color: $color-neon;
+            }
+            &:hover {
+              color: $color-neon;
+              strong {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .articles {
+      min-width: 375px;
+      width: 375px;
+      margin-right: 4px;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        margin-top: 4px;
+        padding-left: 0;
+        li {
+          background: $color-fatigues;
+          padding: 20px;
+          margin-bottom: 4px;
+          h4 {
+            line-height: 1.75em;
+          }
+          p {
+            line-height: 1.7em;
+          }
+          a {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+              color: $color-neon;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .extra {
+    border-bottom-right-radius: 40px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    background-position: 0 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .inner {
+      padding: 0 50px;
+      padding-top: 50px;
+      padding-bottom: 70px;
+      margin-top: -20px;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      background: linear-gradient(180deg, rgba(198,220,147,1) 0%, rgba(198,220,147,0) 75%);
+      h2, h3, h4 {
+        font-size: 32px;
+        white-space: nowrap;
+      }
+      p {
+        padding-left: 50px;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
