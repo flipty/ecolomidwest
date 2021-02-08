@@ -1,0 +1,33 @@
+.page-template-default, .single-post {
+  h1 {
+    color: $color-neon;
+    background: $color-forest;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 1em;
+  }
+  blockquote {
+    background: $color-fatigues;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 20px;
+    max-width: 80%;
+    line-height: 1.5em;
+    color: $white;
+  }
+  main .post-content {
+      p, ul, ul, li {
+      line-height: 1.7em;
+      font-size: 1.25em;
+      a {
+        color: $color-forest;
+        font-weight: bold;
+      }
+    }
+  }
+}

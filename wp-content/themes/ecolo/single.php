@@ -2,11 +2,14 @@
 
 	<?php	if(have_posts()): while(have_posts()): the_post();?>
 
+<main>
 	<div class="container">
 
 					<div <?php post_class();?>>
 						<h1><?php the_title();?></h1>
-						<?php the_content();?>
+						<div class="post-content">
+							<?php the_content();?>							
+						</div>
 					</div>
 
 					<h4>Post listing</h4>
@@ -39,6 +42,7 @@
 
 
 	</div>
+</main>
 
 	<?php	endwhile; endif;?>
 

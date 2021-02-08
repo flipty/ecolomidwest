@@ -1,6 +1,3 @@
-// 768px
-// 992px
-// 1200px
 @mixin bp($point) {
   @if $point == mobile {
     @media only screen and (max-width: 992px) {
@@ -29,26 +26,22 @@
   }
 }
 
-$tomato: #bb290c;
-$clay: #d46900;
-$mud: #b1783f;
-$ember: #dc8533;
-$salmon: #f58c73;
-$lime: #8bcb00;
-$cilantro: #33a522;
-$pepper: #1a4a13;
-$avocado: #d0d400;
-$adobe: #f4f5c4;
+$color-neon: #b9f925;
+$color-keylime: #c6dc93;
+$color-fatigues: #589d62;
+$color-forest: #1a512e;
+$color-darkforest: #2f3c34;
+$white: #ffffff;
+$black: #000000;
 $black90: rgba(0,0,0,0.9);
 $black75: rgba(0,0,0,0.75);
 $black50: rgba(0,0,0,0.5);
 $black25: rgba(0,0,0,0.25);
 $black15: rgba(0,0,0,0.15);
 $black10: rgba(0,0,0,0.1);
-$sm: 600px;
-$md: 750px;
-$lg: 1000px;
-$xl: 1140px;
 
-$white: #ffffff;
-$black: #000000;
+.mobile-only {
+  @include bp(desktop){
+    display: none !important;
+  }
+}

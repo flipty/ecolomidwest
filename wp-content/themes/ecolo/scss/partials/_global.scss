@@ -1,12 +1,238 @@
-body {
-  background: $white;
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
+html {
+  background: $color-darkforest;
 }
 
-.mobile-only {
-  @include bp(desktop){
-    display: none !important;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  @include bp(mobile){
+    &.admin-bar {
+      .nav-trigger {
+        top: 53px;
+      }
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+main {
+  background: $color-keylime;
+  padding: 25px 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  @include bp(mobile){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+header {
+  background: $color-fatigues;
+  .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: baseline;
+    a.branding {
+      font-weight: 600;
+      color: $white;
+      text-decoration: none;
+      font-size: 42px;
+      white-space: nowrap;
+      letter-spacing: -0.05em;
+      span {
+        color: $color-keylime;
+        display: inline-block;
+        margin-left: -10px;
+      }
+      @include bp(mobile){
+        font-size: 20px;
+        letter-spacing: -0.025em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span {
+          margin-left: -4px;
+        }
+      }
+    }
+    ul.header-nav {
+      li {
+        margin-left: 15px;
+        a {
+          padding-top: 50px;
+          display: block;
+          letter-spacing: -0.025em;
+          @include bp(mobile){
+              padding-top: 15px;
+          }
+        }
+      }
+      @include bp(mobile){
+          padding-bottom: 15px;
+      }
+    }
+  }
+  .nav-trigger {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    a {
+      display: block;
+      width: 32px;
+      height: 32px;
+      span {
+        display: block;
+        border-radius: 3px;
+        height: 3px;
+        width: 100%;
+        margin: 5px 0;
+        background: $color-neon;
+        transition: 500ms all;
+      }
+      &.active {
+        span {
+          &.top {
+            transform: rotate(45deg);
+            margin-top: 15px;
+          }
+          &.mid {
+            opacity: 0;
+            width: 0;
+          }
+          &.bot {
+            transform: rotate(-45deg);
+            margin-top: -15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding-bottom: 100px;
+  .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    a.branding {
+      font-weight: 600;
+      color: $white;
+      text-decoration: none;
+      font-size: 25px;
+      letter-spacing: -0.05em;
+      margin-top: 15px;
+      span {
+        color: $color-keylime;
+        display: inline-block;
+        margin-left: -5px;
+      }
+    }
+    ul.footer-nav {
+      li {
+        margin-right: 3em;
+        a {
+          padding-top: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+header, footer {
+  ul.header-nav, ul.footer-nav {
+    display: flex;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      list-style-image: none;
+      position: relative;
+      a {
+        color: $color-neon;
+        text-decoration: none;
+        font-size: 16px;
+        margin-bottom: -3px;
+        white-space: nowrap;
+        &:hover {
+          color: lighten($color-neon, 20%);
+        }
+      }
+      ul.sub-menu {
+        position: absolute;
+        border-top: solid 3px $color-neon;
+        background: $color-forest;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 4px;
+        display: none;
+        li {
+          margin-left: 0;
+          a {
+            padding-top: 0;
+            padding-bottom: 20px;
+            white-space: nowrap;
+            display: block;
+            text-align: center;
+            padding-left: 2em;
+            padding-right: 2em;
+            letter-spacing: -0.025em;
+          }
+          &:first-child {
+            a {
+              padding-top: 20px;
+            }
+          }
+        }
+        @include bp(mobile){
+            display: block;
+            position: static;
+            border-top: none;
+            margin-top: 5px;
+            li {
+              a {
+                text-align: left;
+                padding: 10px;
+                padding-bottom: 5px;
+                padding-left: 20px;
+              }
+              &:first-child {
+                a {
+                  padding-top: 12px;
+                }
+              }
+            }
+        }
+      }
+      &.menu-item-has-children {
+        &:hover {
+          ul.sub-menu {
+            display: block;
+          }
+        }
+      }
+    }
+    @include bp(mobile){
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -700px;
+      background: $color-forest;
+      width: 100%;
+      transition: 500ms all;
+      &.active {
+        top: 90px;
+      }
+    }
   }
 }

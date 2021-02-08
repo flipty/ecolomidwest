@@ -8,7 +8,8 @@ if(have_posts()):
 	while(have_posts()): the_post();
 ?>
 
-<div class="container">
+<main>
+	<div class="container">
 
 <?php the_content();?>
 
@@ -35,7 +36,8 @@ if ( $latest_posts->have_posts() ) {
 wp_reset_postdata();
 ?>
 
-</div>
+	</div>
+</main>
 
 <?php
 	endwhile;

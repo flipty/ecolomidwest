@@ -173,4 +173,26 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
+function custom_admin_css() {
+echo '<style type="text/css">';
+
+/* Main column width */
+echo '.wp-block {';
+echo '    max-width: 1000px;';
+echo '}';
+
+/* Width of "wide" blocks */
+echo '     .wp-block[data-align="wide"] {';
+echo '     max-width: 1000px;';
+echo '}';
+
+/* Width of "full-wide" blocks */
+echo '.wp-block[data-align="full"] {';
+echo '    max-width: none;';
+echo '}';
+
+echo '</style>';
+}
+add_action('admin_head', 'custom_admin_css');
+
 ?>
