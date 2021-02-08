@@ -34,6 +34,9 @@
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
+    @include bp(mobile){
+      display: block;
+    }
     .post-content {
 
     }
@@ -68,6 +71,10 @@
             }
           }
         }
+      }
+      @include bp(mobile){
+        width: calc(100% - 30px);
+        margin-left: 0;
       }
     }
   }

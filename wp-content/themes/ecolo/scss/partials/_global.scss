@@ -230,6 +230,7 @@ header, footer {
       background: $color-forest;
       width: 100%;
       transition: 500ms all;
+      border-bottom: solid 4px $color-neon;
       &.active {
         top: 90px;
       }
@@ -247,6 +248,11 @@ header, footer {
         background: $color-darkforest;
         margin-bottom: 20px;
         margin-top: 15px;
+        li {
+          &:last-child {
+            padding-bottom: 20px;
+          }
+        }
       }
     }
   }
