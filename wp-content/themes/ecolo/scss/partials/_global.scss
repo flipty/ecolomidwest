@@ -139,6 +139,10 @@ footer {
     ul.footer-nav {
       li {
         margin-right: 3em;
+        @include bp(mobile){
+          overflow: hidden;
+          margin-right: 0;
+        }
         a {
           padding-top: 10px;
           display: block;
