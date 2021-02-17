@@ -5,7 +5,7 @@
       'menu_class' => 'footer-nav',
       'container' => 'nav'
     )); ?>
-    <a href="<?php echo get_site_url();?>" class="branding">ECOLO <span>midwest</span></a>
+    <a href="<?php echo get_site_url();?>" class="branding">ECOLOS <span>midwest</span></a>
   </div>
 </footer>
 

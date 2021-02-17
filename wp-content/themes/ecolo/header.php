@@ -14,7 +14,7 @@
 
 <header>
   <div class="container">
-    <a href="<?php echo get_site_url();?>" class="branding">ECOLO <span>midwest</span></a>
+    <a href="<?php echo get_site_url();?>" class="branding">ECOLOS <span>midwest</span></a>
     <?php wp_nav_menu( array(
       'menu' => 'Header Menu',
       'menu_class' => 'header-nav',
