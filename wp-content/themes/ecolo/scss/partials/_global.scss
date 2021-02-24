@@ -81,7 +81,7 @@ header {
   }
   .nav-trigger {
     position: absolute;
-    top: 35px;
+    top: 7px;
     right: 15px;
     a {
       display: block;
@@ -203,6 +203,7 @@ header, footer {
             position: static;
             border-top: none;
             margin-top: 5px;
+            overflow: hidden;
             li {
               a {
                 text-align: left;
@@ -236,7 +237,7 @@ header, footer {
       transition: 500ms all;
       border-bottom: solid 4px $color-neon;
       &.active {
-        top: 90px;
+        top: 44px;
       }
     }
   }
