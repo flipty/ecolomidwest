@@ -104,7 +104,7 @@
       display: flex;
       flex-flow: row;
       align-items: center;
-      background: linear-gradient(180deg, rgba(198,220,147,1) 0%, rgba(198,220,147,0) 75%);
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 75%);
       @include bp(mobile){
         display: block;
         padding: 0 25px;

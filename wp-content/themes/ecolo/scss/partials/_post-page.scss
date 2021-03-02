@@ -82,3 +82,13 @@
     }
   }
 }
+
+.wp-block-image {
+  img {
+    height: auto;
+  }
+}
+
+.sptp-member-social.rounded ul li a {
+  color: $white !important;
+}

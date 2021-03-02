@@ -182,7 +182,6 @@ echo '<style type="text/css">';
 echo '.wp-block {';
 echo '    max-width: 1000px;';
 echo '    font-family: "Montserrat";';
-echo '    background-color: #c6dc93;';
 echo '}';
 
 echo '.block-editor__typewriter {';

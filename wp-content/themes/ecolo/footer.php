@@ -5,7 +5,10 @@
       'menu_class' => 'footer-nav',
       'container' => 'nav'
     )); ?>
-    <a href="<?php echo get_site_url();?>" class="branding">ECOLOS <span>midwest</span></a>
+    <div class="logos">
+      <a href="https://horsdefrance.eelv.fr/" target="_blank" class="branding-parent"><img src="/wp-content/themes/ecolo/eelv.svg" alt="eelv.fr"></a>
+      <a href="<?php echo get_site_url();?>" class="branding">ECOLOS <span>midwest</span></a>      
+    </div>
   </div>
 </footer>
 
